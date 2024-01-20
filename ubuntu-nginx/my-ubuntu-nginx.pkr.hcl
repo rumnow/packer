@@ -34,12 +34,12 @@ build {
   sources = ["source.yandex.example"]
 
   provisioner "shell" {
-    script = "ubuntu-update.sh"
+    script = "ubuntu-nginx/ubuntu-update.sh"
   }
   provisioner "shell" {
-    script = "install-soft.sh"
+    script = "ubuntu-nginx/install-soft.sh"
   }
   provisioner "shell" {
-    script = "test.sh"
+    script = "ubuntu-nginx/test.sh"
   }
 }

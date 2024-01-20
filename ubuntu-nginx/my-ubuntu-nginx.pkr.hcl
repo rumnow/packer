@@ -1,17 +1,20 @@
 variable "yandex_token" {
-    type = string
-    default = env("Y_TOKEN")
-    description = "YC Token"
+  type        = string
+  default     = env("Y_TOKEN")
+  description = "YC Token"
+  sensitive   = true
 }
 variable "yandex_folder_id" {
-    type = string
-    default = env("Y_FOLDERID")
-    description = "YC Folder ID"
+  type        = string
+  default     = env("Y_FOLDERID")
+  description = "YC Folder ID"
+  sensitive   = true
 }
 variable "yandex_subnet_id" {
-    type = string
-    default = env("Y_SUBNETID")
-    description = "YC Subnet ID"
+  type        = string
+  default     = env("Y_SUBNETID")
+  description = "YC Subnet ID"
+  sensitive   = true
 }
 
 source "yandex" "example" {
